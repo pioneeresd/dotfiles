@@ -20,10 +20,6 @@ if [ -d "/usr/local/texlive/2019/bin/x86_64-linux" ] ; then
   PATH=/usr/local/texlive/2019/bin/x86_64-linux:$PATH
 fi
 
-if [ -d "$HOME/.gem/ruby/2.6.0/bin" ] ; then
-  PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
-fi
-
 if [ -d "$HOME/.yarn/bin" ]; then
   PATH="$HOME/.yarn/bin:$PATH"
 fi
