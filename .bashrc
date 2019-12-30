@@ -193,5 +193,3 @@ ex ()
 [[ -f ~/.bashrc-personal ]] && . ~/.bashrc-personal
 
 neofetch
-
-source ~/.bash_completion.d/rails.bash
