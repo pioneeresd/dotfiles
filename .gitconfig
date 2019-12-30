@@ -1,0 +1,17 @@
+# This is Git's per-user configuration file.
+[user]
+# Please adapt and uncomment the following lines:
+	name = Jim Hessin
+	email = jhessin@gmail.com
+[merge]
+  tool = vimdiff
+[mergetool]
+  prompt = false
+[mergetool "vimdiff"]
+  cmd = nvim -d $LOCAL $MERGED $REMOTE 
+[difftool]
+  prompt = false
+[diff]
+  tool = vimdiff
+[difftool "vimdiff"]
+  cmd = nvim -d $LOCAL $REMOTE

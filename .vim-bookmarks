@@ -1,0 +1,3 @@
+let l:bm_file_version = 1
+let l:bm_sessions = {'default': {'/home/jhessin/Documents/github/notes/games/ffx-current.txt': [{'sign_idx': 9502, 'line_nr': 2210, 'content': '| 20,000 Gil............._____ |  before continuing any further.  Head North '},{'sign_idx': 9503, 'line_nr': 2224, 'content': '| Boss: Biron & Yenke          |                                             |'},],'/home/jhessin/Documents/github/notes/games/nightmare_farm/legend/food.tex': [{'sign_idx': 9501, 'line_nr': 12, 'content': ''},],}}
+let l:bm_current_session = 'default'

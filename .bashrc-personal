@@ -1,0 +1,77 @@
+
+set -o vi
+export EDITOR=nvim
+export PS1="\e[1;34m[\u@\h \W]\$ "
+
+if [[ -e "/usr/bin/nvimpager" ]]; then
+  export PAGER="/usr/bin/nvimpager"
+else
+  export PAGER="$HOME/.local/bin/nvimpager-darwin"
+fi
+
+MANPATH=/usr/local/texlive/2019/texmf-dist/doc/man:$MANPATH
+INFOPATH=/usr/local/texlive/2019/texmf-dist/doc/info:$INFOPATH
+
+if [ -d "$HOME/.rbenv/bin" ]; then
+  PATH="$HOME/.rbenv/bin:$HOME/.rbenv/shims:$PATH"
+fi
+
+if [ -d "/usr/local/texlive/2019/bin/x86_64-linux" ] ; then
+  PATH=/usr/local/texlive/2019/bin/x86_64-linux:$PATH
+fi
+
+if [ -d "$HOME/.gem/ruby/2.6.0/bin" ] ; then
+  PATH="$HOME/.gem/ruby/2.6.0/bin:$PATH"
+fi
+
+if [ -d "$HOME/.yarn/bin" ]; then
+  PATH="$HOME/.yarn/bin:$PATH"
+fi
+
+if [ -d "$HOME/.local/bin" ] ; then
+  PATH="$HOME/.local/bin:$PATH"
+fi
+# $HOME/.local/bin/kbd-dvp
+
+# Fast reloading of .bashrc
+alias reload=". ~/.bashrc"
+
+# Always use neovim
+alias vim=nvim
+
+# Fast rails
+alias railstart="rails s -b 0.0.0.0"
+alias railtest="rails t"
+
+# Various git shortcuts
+alias gpull="git pull"
+alias bitbucket=~/Documents/bitbucket
+alias github=~/Documents/github
+alias herokuapps=~/Documents/heroku
+
+# Quick configuration
+alias bashconfig="vim ~/.bashrc-personal && reload"
+alias gitconfig="git config --global -e"
+alias cupsconfig="firefox http://localhost:631"
+alias i3config="nvim ~/.config/i3/config"
+alias tmuxconfig="nvim ~/.tmux.conf"
+alias vimconfig="nvim ~/.config/nvim/init.vim && ~/.config/nvim/install.sh"
+alias zathuraconfig="nvim ~/.config/zathura/zathurarc"
+alias setupconfig="nvim ~/.config/setup"
+alias mimeconfig="nvim ~/.config/mimeapps.list"
+alias xconfig="nvim ~/.profile"
+alias lakkaconfig="ssh root@10.0.0.31"
+alias awesomeconfig="nvim ~/.config/awesome/rc.lua"
+
+# Quickly get to config directories and repos
+export VIMRC="$HOME/.config/nvim"
+alias vimrc=$VIMRC
+export BINRC="$HOME/.local/bin"
+alias binrc=$BINRC
+export CONFIGRC="$HOME/.config"
+alias configrc=$CONFIGRC
+
+# Mac specific shortcuts
+alias synergyc="/Applications/Utilities/Synergy.app/Contents/MacOS/synergyc \
+10.0.0.130"
+

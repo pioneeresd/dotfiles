@@ -1,0 +1,15 @@
+*
+!.*
+.fehbg
+.local/
+.config/
+.atom
+.rbenv
+.Xauthority
+.bash_history
+.xsession-errors
+.xsession-errors.old
+.DS_Store
+.Trash
+.viminfo
+.netrc
