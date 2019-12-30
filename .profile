@@ -11,6 +11,8 @@ POWERLINE_BASH_SELECT=1
 export PATH="$HOME/.local/bin:$PATH"
 # $HOME/.local/bin/kbd-dvp
 # $HOME/.local/bin/dispsetup
-kbd-dvp
+if [[ $USER == "jhessin" ]]; then
+  kbd-dvp
+fi
 autolock
 # dispsetup
