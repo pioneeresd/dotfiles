@@ -43,10 +43,6 @@ alias vim=nvim
 alias railstart="rails s -b 0.0.0.0"
 alias railtest="rails t"
 
-# Automatic use of dvp and return to us keyboard
-kbd-dvp
-alias exit="kbd-us && exit"
-
 # Various git shortcuts
 alias gpull="git pull"
 alias bitbucket=~/Documents/bitbucket
@@ -78,4 +74,12 @@ alias configrc=$CONFIGRC
 # Mac specific shortcuts
 alias synergyc="/Applications/Utilities/Synergy.app/Contents/MacOS/synergyc \
 10.0.0.130"
+
+# Automatic use of dvp and return to us keyboard
+kbd-dvp
+if [[ $USER == "pioneeresd" ]]; then
+  alias exit="kbd-us && exit"
+  echo "If you are having trouble typing enter: vnh'f; (kbd-us)"
+  echo "If you simply with to exit (and restore standard keyboard) type dbgk (exit)"
+fi
 
