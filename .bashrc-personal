@@ -81,5 +81,6 @@ if [[ $USER == "pioneeresd" ]]; then
   alias exit="kbd-us && exit"
   echo "If you are having trouble typing enter: vnh'f; (kbd-us)"
   echo "If you simply with to exit (and restore standard keyboard) type dbgk (exit)"
+  echo "If nothing seems to be working press <ESC>g to start typing"
 fi
 
